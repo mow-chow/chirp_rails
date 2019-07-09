@@ -1,7 +1,15 @@
 class UsersController < ApplicationController
     before_action :authenticate!, except: [:index, :show]
 
-    byebug
+   def index
+    @chirrps = Chirrp.all.order("created_at DESC")
+    @users = User.all
+   end
+
+   
+
+
+
     private
 
     def user_params

@@ -1,0 +1,10 @@
+<h1>All your chirrps!!</h1>
+
+<div>
+<img src="<%=@user.avatar%>">
+<h6><%=link_to @user.name, user_path(@user)%></h6> | <p>@<%=@user.username%><p>
+<p><%=@chirrp.chirp_text%></p>
+<button type="button" onclick="<%new_rechirrp_path%>">Rechirrp</button>
+<button type="button" onclick="<%new_squwak_path %>">Squwak</button>
+<button type="button" onclick="<%new_splat_path %>">Splat</button>
+</div>

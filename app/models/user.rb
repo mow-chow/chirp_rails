@@ -8,9 +8,9 @@ class User < ApplicationRecord
     has_many :squawks 
     has_many :rechirrps, foreign_key: "rechirrper_id"
 
-    validates :username, prescence: true
+    validates :username, presence: true
     validates :username, uniqueness: true
-    validates :password, prescence: true, length: {minimum: 8}
+    validates :password, presence: true, length: {minimum: 8}
 
     has_secure_password
 end
