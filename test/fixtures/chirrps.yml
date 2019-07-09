@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chirp_text: MyString
+  user_id: 1
+  media: MyString
+  parent_id: 1
+  location: MyString
+
+two:
+  chirp_text: MyString
+  user_id: 1
+  media: MyString
+  parent_id: 1
+  location: MyString
