@@ -70,3 +70,64 @@ Migrating to CreateRelationships (20190708212054)
   ↳ /Users/cat./.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/cat./.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Started GET "/heroines" for ::1 at 2019-07-09 11:19:33 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cat./.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/heroines"):
+  
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:30:in `block in call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:71:in `tagged'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/rack/logger.rb:26:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/rack-2.0.7/lib/rack/runtime.rb:22:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/activesupport-5.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/static.rb:127:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/rack-2.0.7/lib/rack/sendfile.rb:111:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/engine.rb:524:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/puma-3.12.1/lib/puma/configuration.rb:227:in `call'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/puma-3.12.1/lib/puma/server.rb:660:in `handle_request'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/puma-3.12.1/lib/puma/server.rb:474:in `process_client'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/puma-3.12.1/lib/puma/server.rb:334:in `block in run'
+/Users/cat/.rvm/gems/ruby-2.6.1/gems/puma-3.12.1/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for ::1 at 2019-07-09 11:19:42 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 710ms (Views: 701.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-07-09 11:19:53 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-07-09 11:19:55 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-07-09 11:20:12 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
