@@ -1,6 +1,14 @@
 class ChirrpsController < ApplicationController
     # before_action :authenticate!
 
+    def index
+        @chirrps = Chirrp.all
+        @chirrp = Chirrp.new
+    end
+
+    def show
+    end
+
     def new
         @chirrp = Chirrp.new
         # @users = User.all
@@ -8,10 +16,11 @@ class ChirrpsController < ApplicationController
     end
 
     def create
-        @chirrp = Chirrp.new(chirrp_params) do |chirrp|
+        @chirrp = Chirrp.create(chirrp_params) do |chirrp|
             chirrp.user = current_user
             chirrp.parent_id = params[:parent_id]
-
+            # @chirrp.save
+            redirect_to chirrps_path
         end
     end
 

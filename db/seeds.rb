@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+chirp1 = Chirrp.create(chirp_text:"this is a chirrp", media:" media", location:'location')
+user1 = User.create(name:"name")

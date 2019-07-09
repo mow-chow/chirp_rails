@@ -1,8 +1,4 @@
-<h1>Create a new Chirp</h1>
 
 
-<%= simple_form_for @chirrp do |f| %>
-  <%= f.error_notification %>
-  <%= f.input :chirp_text, label: "Chirrp about it", input_html: {class: "textarea"}, wrapper: false, label_html: {class: "label"}, placeholder: "write shit here", autofocus: true %>
-    <%= f.button :submit, class:"button is-info" %>
-<% end %>
+<h1 class="title">Create a new Chirrp</h1>
+					<%= render 'form', chirrp: @chirrp %>

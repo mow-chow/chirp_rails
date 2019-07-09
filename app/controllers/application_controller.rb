@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     def authenticate!
         unless current_user
             flash[:info] = "You have to be logged in to do that!"
-            redirect_to users_path
+            redirect_to new_chirrp_path
         end
     end
     

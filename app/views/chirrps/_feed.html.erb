@@ -1,0 +1,19 @@
+<h1>Chirrp Feed</h1>
+
+
+<%= render 'chirrps/form' %>
+
+
+<% @chirrps.each do | chirrp | %>
+  	<strong><%= chirrp.user.name %></strong><br />
+  	<small><%= chirrp.user.username %></small><br/>
+  	    <p><%= chirrp.chirp_text %></p>
+        
+  					<%= link_to chirrp, method: :delete, data: { confirm: "Are you sure you want to delete this chirrp?" } do %>
+  							<span class="icon"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+  					<% end %>
+                      <%end%>
+  			
+   
+  
+

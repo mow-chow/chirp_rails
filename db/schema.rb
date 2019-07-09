@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 2019_07_08_212054) do
     t.string "name"
     t.string "username"
     t.string "location"
-    t.string "avatar"
+    t.string "img_url"
     t.string "cover"
     t.string "about"
     t.string "password_digest"
