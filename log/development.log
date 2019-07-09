@@ -131,3 +131,11 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users" for ::1 at 2019-07-09 11:37:05 -0400
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `<class:UsersController>'
+app/controllers/users_controller.rb:5:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
